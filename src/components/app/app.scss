@@ -1,0 +1,17 @@
+@mixin mobile {
+  @media (max-width: 767px) { @content; }
+}
+
+@mixin tabletUp {
+  @media (min-width: 768px) { @content; }
+}
+
+html, body, #app, .appWrapper {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+.hidden {
+  display: none !important;
+}
